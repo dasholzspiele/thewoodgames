@@ -1,0 +1,85 @@
+#main{
+  width : 900px;
+  margin: 0 auto;
+}
+#main .logo{
+  height: 303px;
+  text-align: center;
+}
+#main .menu{
+  height: 80px;
+  line-height: 80px;
+  text-align: center;
+  border-top: 1px solid #8A8000;
+  border-bottom: 1px solid #8A8000;
+  margin-bottom: 33px;
+}
+#main .menu .child{
+  float: left;
+  width: 33%;
+  height: 100%;
+  cursor: pointer;
+}
+#main .menu .child:hover{
+  background-color: #DCDDDD;
+}
+#main .menu .child .en{
+ color: #8A8000;
+}
+#main .banner{
+  height: 400px;
+  background-color: #8A8000;
+  margin-bottom: 28px;
+}
+#main .banner .img1{
+  width: 100%;
+  height: 100%;
+  background-image: url(../images/DM.jpg);
+  background-size: contain;
+}
+#main .content{
+  margin-bottom: 30px;
+  font-size: 1.2em;
+}
+#main .content p{
+  margin-bottom: 5px;
+}
+
+#footer{
+  background-color: #8A8000;
+  height: 135px;
+}
+#footer .content{
+  width : 900px;
+  margin: 0 auto;
+  padding-top: 25px;
+  font-size: 1.2em;
+  color: #ffffff;
+}
+#footer .content .left{
+  float: left;
+}
+#footer .content .right{
+  float: right;
+}
+#footer .content ul li{
+  display: inline-block;
+  margin-right: 25px;
+}
+#footer .content ul li a{
+  color: #ffffff;
+  text-decoration: none;
+}
+#footer .content ul li a:hover{
+/*  text-decoration: underline;*/
+  border-bottom: 1px solid #ffffff;
+}
+
+.clearfix:before,
+.clearfix:after {
+  content: "";
+  display: table;
+}
+.clearfix:after {
+  clear: both;
+}
