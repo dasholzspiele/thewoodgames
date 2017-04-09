@@ -1,6 +1,27 @@
+
+/*
+google 思源黑體
+http://fonts.googleapis.com/earlyaccess/notosanstc.css
+https://tt5.org/webfont-%E7%89%88%E7%9A%84%E6%80%9D%E6%BA%90%E9%BB%91%E9%AB%94%E7%B5%82%E6%96%BC%E4%BE%86%E4%BA%86%EF%BC%81/
+*/
+
+@font-face {
+   font-family: 'Noto Sans TC';
+   font-style: normal;
+   font-weight: 700;
+   src: url(//fonts.gstatic.com/ea/notosanstc/v1/NotoSansTC-Bold.woff2) format('woff2'),
+        url(//fonts.gstatic.com/ea/notosanstc/v1/NotoSansTC-Bold.woff) format('woff'),
+        url(//fonts.gstatic.com/ea/notosanstc/v1/NotoSansTC-Bold.otf) format('opentype');
+ }
+
+
+body{
+ font-family: 'Noto Sans TC', sans-serif;
+}
 #main{
-  width : 900px;
+  width : 1000px;
   margin: 0 auto;
+  padding: 0 50px;
 }
 #main .logo{
   height: 303px;
@@ -13,18 +34,49 @@
   border-top: 1px solid #8A8000;
   border-bottom: 1px solid #8A8000;
   margin-bottom: 33px;
+  font-size: 28px;
+  display: table;
+  width: 100%;
 }
-#main .menu .child{
-  float: left;
+#main .menu .item{
   width: 33%;
   height: 100%;
   cursor: pointer;
+  display: table-cell;
+  position: relative;
 }
-#main .menu .child:hover{
+#main .menu .item:hover{
   background-color: #DCDDDD;
 }
-#main .menu .child .en{
+#main .menu .item>.en{
  color: #8A8000;
+}
+
+#main .menu .item .child_parent{
+  position: absolute;
+  width: 100%;
+  display: none;
+}
+#main .menu .item .child{
+  background-color: #8A8000;
+  font-size: 18px;
+  width: 100%;
+  text-align: left;
+  color: #ffffff;
+  line-height: 24px;
+  padding: 16px 30px;
+  letter-spacing: 1px;
+  display: block;
+  text-decoration: none;
+}
+#main .menu .item .child .en{
+  letter-spacing: 0px;
+}
+#main .menu .item:hover .child_parent{
+  display: block;
+}
+#main .menu .item .child:hover{
+  background-color: #000000;
 }
 #main .banner{
   height: 400px;
@@ -39,21 +91,24 @@
 }
 #main .content{
   margin-bottom: 30px;
-  font-size: 1.2em;
+  font-size: 16px;
 }
 #main .content p{
   margin-bottom: 5px;
+  letter-spacing: 1px;
 }
 
 #footer{
   background-color: #8A8000;
   height: 135px;
+  min-width: 1000px;
+  padding: 0 50px;
 }
 #footer .content{
   width : 900px;
   margin: 0 auto;
   padding-top: 25px;
-  font-size: 1.2em;
+  font-size: 16px;
   color: #ffffff;
 }
 #footer .content .left{
@@ -61,6 +116,7 @@
 }
 #footer .content .right{
   float: right;
+  letter-spacing: 2px;
 }
 #footer .content ul li{
   display: inline-block;
@@ -74,6 +130,7 @@
 /*  text-decoration: underline;*/
   border-bottom: 1px solid #ffffff;
 }
+
 
 .clearfix:before,
 .clearfix:after {
