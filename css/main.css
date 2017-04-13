@@ -44,6 +44,7 @@ body{
   cursor: pointer;
   display: table-cell;
   position: relative;
+  color: black;
 }
 #main .menu .item:hover{
   background-color: #DCDDDD;
@@ -51,7 +52,9 @@ body{
 #main .menu .item>.en{
  color: #8A8000;
 }
-
+#main .menu a{
+  text-decoration: none;
+}
 #main .menu .item .child_parent{
   position: absolute;
   width: 100%;
@@ -92,9 +95,41 @@ body{
 #main .content{
   margin-bottom: 30px;
   font-size: 16px;
+  width: 100%;
+  display: table;
+  padding-top: 10px;
 }
-#main .content p{
-  margin-bottom: 5px;
+#main .content a{
+  color: #8A8000;
+  text-decoration: none;
+}
+#main .content a:hover{
+  border-bottom: 1px solid #8A8000;
+}
+#main .content .left{
+  display: table-cell;
+  vertical-align: top;
+  width: 70%;
+  padding-left: 30px;
+}
+#main .content .right{
+  display: table-cell;
+  vertical-align: top;
+}
+#main .content .left .block{
+  margin-bottom: 26px
+}
+#main .content .left .logo_img{
+  margin-bottom: 22px
+}
+#main .content .left h1{
+  font-size: 18px;
+  line-height: 28px;
+  letter-spacing: 2px;
+}
+#main .content .left h2{
+  font-size: 16px;
+  line-height: 22px;
   letter-spacing: 1px;
 }
 
