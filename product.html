@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="zh-TW">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>此木創遊 The Wood Games</title>
+  <link rel="stylesheet" type="text/css" href="css/normalize.css">
+  <link rel="stylesheet" type="text/css" href="css/reset.css">
+  <link rel="stylesheet" type="text/css" href="css/main.css">
+</head>
+
+<body>
+  <div id="main">
+    <div class="logo">
+      <a href="index.html">
+        <img src="images/logo.png" alt="logo">
+      </a>
+    </div>
+    <div class="menu">
+      <a href="about.html">
+        <div class="item">
+          <span>介紹</span>
+          <span class="en">About</span>
+        </div>
+      </a>
+      <div class="item">
+        <span>遊戲</span>
+        <span class="en">Games</span>
+        <div class="child_parent">
+          <a href="product.html" class="child">
+            <p>萬貓的慶典</p>
+            <p class="en">Festival of Thousand Cats</p>
+          </a>
+        </div>
+      </div>
+      <a href="shop.html">
+        <div class="item">
+          <span>商店</span>
+          <span class="en">Shop</span>
+        </div>
+      </a>
+    </div>
+    
+      <div class="product_content" style="margin-bottom: 50px;">
+      <div class="left">
+        <div class="img_show" style="background-image: url(../images/C0.jpg);"></div>
+        <div class="img_list">
+          <div class="active" style="background-image: url(../images/C0.jpg);"></div>
+          <div style="background-image: url(../images/C1.jpg);"></div>
+          <div style="background-image: url(../images/C2.jpg);"></div>
+          <div style="background-image: url(../images/C3.jpg);"></div>
+        </div>
+      </div>
+      <div class="right">
+        <div class="g1">萬貓的慶典</div>
+        <div class="g2">Festival of Thousand Cats</div>
+        <div class="g3">
+          遊戲設計：福夕郎 <br>
+          美術插畫：ナカヤマ皐月 <br>
+          遊戲人數：3-4人 <br>
+          遊戲時間：20-40分鐘 <br>
+          建議售價：820元 <br>
+          <br>
+          內容物：<br>
+          2 本說明書 (中/英)<br>
+          2 本簡易規則書 (中/英)<br>
+          38 張數字牌<br>
+          12 張無季節牌<br>
+          12 張分數加倍牌<br>
+          4 張玩家幫助卡<br>
+          1 張計分卡<br>
+          1 張季節卡<br>
+          16 個季節加倍指示物<br>
+          4 個季節指示物<br>
+          8 個分數指示物<br>
+          10 個好酒指示物
+        </div>
+        <a class="g4" href="shop.html">立即購買</a>
+      </div>
+    </div>
+    <div class="product_menu">
+      
+    </div>
+    
+    
+    
+  </div>
+  <div id="footer">
+   <div class="content">
+      <div class="left">
+        <ul>
+          <li><a href="https://www.facebook.com/dasholzspiele" target="_blank">Facebook</a></li>
+          <li><a href="https://twitter.com/dasholzspiele" target="_blank">Twitter</a></li>
+          <li><a href="https://www.instagram.com/thewoodgames/" target="_blank">Instagram</a></li>
+          <li><a href="mailto:dasholzspiele@gmail.com">Contact</a></li>
+        </ul>
+      </div>
+      <div class="right">
+        © 2017 此木創遊 The Wood Games
+      </div>
+    </div>
+  </div>
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script>
+  $(function(){
+    $(".img_list>div").on("click",function(event){
+      $(this).siblings().removeClass("active");
+      $(".img_list>div").eq($(this).index()).addClass("active")
+      $(".img_show").css("background-image",$(event.target).css("background-image"));
+      
+    })
+  })
+  
+</script>
+</html>
