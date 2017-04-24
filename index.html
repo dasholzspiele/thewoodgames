@@ -4,12 +4,28 @@
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  
+<!--
+  <meta name="keywords" content="梅問題,沒問題" />
+  <meta name="description" content="記錄關於影像的大小事、電腦相關雜症、網頁問題，都歡迎大家有問題沒問題，通通都梅問題。" />
+  <meta name="author" content="梅干扣肉">
+  <meta name="copyright" CONTENT="本網頁著作權梅問題教學網所有">
+  <meta name="URL" content="https://www.minwt.com">
+-->
+  
   <title>此木創遊 The Wood Games</title>
   <link rel="stylesheet" type="text/css" href="css/normalize.css">
   <link rel="stylesheet" type="text/css" href="css/reset.css">
   <link rel="stylesheet" type="text/css" href="css/main.css">
 </head>
 
+<script>
+if (location.protocol != 'https:'){
+	if(window.location.hostname!="localhost" && window.location.hostname!="127.0.0.1" ){
+			location.href = 'https:' + window.location.href.substring(window.location.protocol.length);
+	}
+}
+</script>
 <body>
   <div id="main">
     <div class="logo">
@@ -41,25 +57,55 @@
         </div>
       </a>
     </div>
-    <div class="banner">
-      <div class="img1"></div>
+    <div class="index_content" style="margin-bottom: 50px;">
+      <div class="index_left">
+        <div class="img_show" style="background-image: url(../images/C0.jpg);"></div>
+        <div class="img_list">
+          <div class="active" style="background-image: url(../images/C0.jpg);"></div>
+          <div style="background-image: url(../images/C1.jpg);"></div>
+          <div style="background-image: url(../images/C2.jpg);"></div>
+          <div style="background-image: url(../images/C3.jpg);"></div>
+        </div>
+      </div>
+      <div class="index_right">
+        <div class="g1">萬貓的慶典</div>
+        <div class="g2">Festival of Thousand Cats</div>
+        <div class="g3">
+          遊戲設計：福夕郎 <br>
+          美術插畫：ナカヤマ皐月 <br>
+          遊戲人數：3-4人 <br>
+          遊戲時間：20-40分鐘 <br>
+          建議售價：820元 <br>
+          <br>
+          內容物：<br>
+          2 本說明書 (中/英)<br>
+          2 本簡易規則書 (中/英)<br>
+          38 張數字牌<br>
+          12 張無季節牌<br>
+          12 張分數加倍牌<br>
+          4 張玩家幫助卡<br>
+          1 張計分卡<br>
+          1 張季節卡<br>
+          16 個季節加倍指示物<br>
+          4 個季節指示物<br>
+          8 個分數指示物<br>
+          10 個好酒指示物
+        </div>
+        <a class="g4" href="shop.html">立即購買</a>
+      </div>
     </div>
-<!--
-     第二張banner的放法
-    <div class="banner">
-      <div class="img1"></div>
+    <div class="index_content2">
+      
     </div>
--->
-    <div class="content"></div>
   </div>
   <div id="footer">
    <div class="content">
       <div class="left">
         <ul>
-          <li><a href="https://www.facebook.com/dasholzspiele">Facebook</a></li>
-          <li><a href="">Twitter</a></li>
-          <li><a href="">Instagram</a></li>
-          <li><a href="">Contact</a></li>
+          <li><a href="https://www.facebook.com/dasholzspiele" target="_blank">Facebook</a></li>
+          <li><a href="https://twitter.com/dasholzspiele" target="_blank">Twitter</a></li>
+          <li><a href="https://www.instagram.com/thewoodgames/" target="_blank">Instagram</a></li>
+          <li><a href="mailto:dasholzspiele@gmail.com">Contact</a></li>
         </ul>
       </div>
       <div class="right">
@@ -69,5 +115,16 @@
   </div>
 </body>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script>
+  $(function(){
+    $(".img_list>div").on("click",function(event){
+      $(this).siblings().removeClass("active");
+      $(".img_list>div").eq($(this).index()).addClass("active")
+      $(".img_show").css("background-image",$(event.target).css("background-image"));
+      
+    })
+  })
+  
+</script>
 
 </html>
