@@ -184,6 +184,7 @@ body{
   margin-left: 548px;
   font-size: 16px;
   line-height: 20px;
+
 }
 #main .product_content .right .g1{
   font-size: 24px;
@@ -200,7 +201,10 @@ body{
 #main .product_content .right .g3{
   font-weight: 400;
 }
-
+#main .product_content .right .g33{
+  font-weight: 400;
+  margin-top: 25px;
+}
 #main .product_content .right .g4{
   width: 120px;
   height: 45px;
@@ -215,7 +219,63 @@ body{
   text-decoration: none;
   display: inline-block
 }
-
+#main .product_content .right .g4:hover{
+   background-color: black;
+}
+#main .product_menu{
+  border-bottom: 1px solid #8A8000;
+  margin-bottom: 15px;
+  font-size: 16px;
+  margin-top: 110px;
+  letter-spacing: 2px
+}
+#main .product_menu>div{
+  border-top: 1px solid #8A8000;
+  border-left: 1px solid #8A8000;
+  float: left;
+  padding: 4px 0;
+  width: 140px;
+  text-align: center;
+  cursor: pointer;
+}
+#main .product_menu>div.active{
+  background-color: #8A8000;
+  color: white;
+}
+#main .product_menu>div>div{
+   display: inline-block;
+   text-align: left;
+}
+#main .product_menu>div:last-child{
+  border-right: 1px solid #8A8000;
+}
+#main .product_menu_content{
+  margin-bottom: 25px;
+  min-height: 300px;
+  line-height: 23px;
+}
+#main .product_menu_content>div{
+  display: none;
+}
+#main .product_menu_content>div.active{
+  display: block;
+}
+#main .product_menu_content img{
+  width: 100%;
+}
+#main .product_menu_content>div .left{
+  float: left;
+  width: 50%;
+}
+#main .product_menu_content>div .right{
+  float: right;
+   width: 50%;
+}
+#main .product_menu_content .top_content>div{
+  width: 25%;
+  float: left;
+  padding: 15px;
+}
 
 #footer{
   background-color: #8A8000;
