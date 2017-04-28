@@ -9,7 +9,13 @@
   <link rel="stylesheet" type="text/css" href="css/reset.css">
   <link rel="stylesheet" type="text/css" href="css/main.css">
 </head>
-
+<script>
+if (location.protocol != 'https:'){
+	if(window.location.hostname!="localhost" && window.location.hostname!="127.0.0.1" ){
+			location.href = 'https:' + window.location.href.substring(window.location.protocol.length);
+	}
+}
+</script>
 <body>
   <div id="main">
     <div class="logo">
@@ -149,9 +155,10 @@ Cats all over the country are always looking for their next feast. They love “
         </div>
       </div>
       <div>
-        《萬貓的慶典》 中文規則書下載
-         <br> 
-        Festival of Thousand Cats English Rulebook Download</div>
+        <a href="https://boardgamegeek.com/filepage/146539/festival-thousand-cats-chinese-rules-v10" target="_blank">《萬貓的慶典》 中文規則書下載</a>
+         <br>
+        <a href="https://boardgamegeek.com/filepage/146538/festival-thousand-cats-english-rules-v20" target="_blank">Festival of Thousand Cats English Rulebook Download</a> 
+        </div>
       <div>尚無相關評論</div>
     </div>
   </div>

@@ -110,11 +110,11 @@ body{
   display: table;
   padding-top: 10px;
 }
-#main .content a{
+#main .content a ,#main .product_menu_content a{
   color: #8A8000;
   text-decoration: none;
 }
-#main .content a:hover{
+#main .content a:hover,#main .product_menu_content a:hover{
   border-bottom: 1px solid #8A8000;
 }
 #main .content .left{

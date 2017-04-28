@@ -9,7 +9,13 @@
   <link rel="stylesheet" type="text/css" href="css/reset.css">
   <link rel="stylesheet" type="text/css" href="css/main.css">
 </head>
-
+<script>
+if (location.protocol != 'https:'){
+	if(window.location.hostname!="localhost" && window.location.hostname!="127.0.0.1" ){
+			location.href = 'https:' + window.location.href.substring(window.location.protocol.length);
+	}
+}
+</script>
 <body>
   <div id="main">
     <div class="logo">
