@@ -33,8 +33,12 @@ body{
   padding: 0 50px;
 }
 #main .logo{
-  height: 303px;
+  height: 300px;
   text-align: center;
+}
+#main .logo img{
+  width: 167px;
+  margin-top: 56px;
 }
 #main .menu{
   height: 80px;
@@ -79,6 +83,7 @@ body{
   color: #ffffff;
   line-height: 24px;
   padding: 16px 30px;
+  padding-right: 15px;
   letter-spacing: 1px;
   display: block;
   text-decoration: none;
@@ -310,6 +315,22 @@ body{
   border-bottom: 1px solid #ffffff;
 }
 
+.product_a {
+  width: 82px;
+  height: 30px;
+  line-height: 30px;
+  background-color: #8A8000;
+  border-radius: 7px;
+  text-align: center;
+  color: #ffffff;
+  font-size: 15px;
+  display: block;
+  cursor: pointer;
+  text-decoration: none;
+}
+.product_a:hover{
+   background-color: black;
+}
 
 .clearfix:before,
 .clearfix:after {
