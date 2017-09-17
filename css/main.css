@@ -317,10 +317,10 @@ body{
 
 .product_a {
   width: 82px;
-  height: 30px;
-  line-height: 30px;
+  height: 32px;
+  line-height: 32px;
   background-color: #8A8000;
-  border-radius: 7px;
+  border-radius: 14px;
   text-align: center;
   color: #ffffff;
   font-size: 15px;
