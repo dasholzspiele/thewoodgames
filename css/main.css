@@ -98,15 +98,8 @@ body{
   background-color: #000000;
 }
 #main .banner{
-  height: 400px;
-  background-color: #8A8000;
+/*  background-color: #8A8000;*/
   margin-bottom: 28px;
-}
-#main .banner .img1{
-  width: 100%;
-  height: 100%;
-  background-image: url(../images/DM.jpg);
-  background-size: contain;
 }
 #main .content{
   margin-bottom: 30px;
